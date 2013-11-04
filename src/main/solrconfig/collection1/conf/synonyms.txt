@@ -1,2 +1,9 @@
 GB,United Kingdom
 st, sankt
+
+rd, road
+blvd, boulevard
+san, sant, santo, santa
+str, Straße, strasse
+val, valle
+via, viale

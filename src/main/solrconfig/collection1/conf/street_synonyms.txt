@@ -1,2 +1,5 @@
 rd, road
 blvd, boulevard
+str, straße, strasse
+val, valle
+via, viale
