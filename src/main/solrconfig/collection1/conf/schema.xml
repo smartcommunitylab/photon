@@ -97,8 +97,8 @@
 		<field name="ranking" type="int" indexed="true" stored="true" required="false"/>
 		<field name="osm_id" type="long" indexed="true" stored="true"/>
 
-		<field name="osm_key" type="string" indexed="false" stored="true" omitNorms="true"/>
-		<field name="osm_value" type="string" indexed="false" stored="true" omitNorms="true"/>
+		<field name="osm_key" type="string" indexed="true" stored="true" omitNorms="true"/> 
+		<field name="osm_value" type="string" indexed="true" stored="true" omitNorms="true"/>
 
 
 		<field name="street" type="street" indexed="true" stored="true"/>
@@ -114,9 +114,12 @@
 		<field name="country" type="text" indexed="true" stored="true"/>
 		<dynamicField name="country_*" type="text" indexed="true" stored="true"/>
 
-		<field name="places" type="text_places" indexed="true" stored="false"/>
+		<field name="places" type="text_places" indexed="true" stored="true"/>
+		<field name="type"  type="text" stored="true" indexed="true"/> 
+
 		<dynamicField name="places_*" type="text" indexed="true" stored="false"/>
 
 		<dynamicField name="*_coordinate" type="tdouble" indexed="true" stored="false"/>
+		
 	</fields>
 </schema>
