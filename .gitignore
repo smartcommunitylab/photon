@@ -9,3 +9,4 @@ src/main/solrconfig/collection1/conf/solrconfig_spell.xml
 /.settings
 /.classpath
 /.project
+src/main/solrconfig/collection1/data/
