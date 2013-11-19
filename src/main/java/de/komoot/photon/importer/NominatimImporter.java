@@ -66,6 +66,7 @@ public class NominatimImporter {
 		Exporter exporter = new XMLExporter(new FileOutputStream(targetFile));
 
 		LOGGER.info("retrieving all items from nominatim database");
+		LOGGER.warn("ATTENTION table placex_solr MUST exists, otherwise use script src/main/resource/placex_solr.sql to create it");
 		ResultSet resultSet = indexCrawler.getAllRecords(onlyBerlin);
 		long counter = 0;
 		long time = System.currentTimeMillis();
